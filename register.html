@@ -1,0 +1,283 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+<style>
+.container{
+	background-image: url(back.jpg);
+	width:100%;
+	height:225%;	
+}
+ul{
+	
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	border-style: solid;
+	border-color: white;		
+}
+li{
+	float: left;
+}
+li a, .dropbtn{
+	display:block;
+	color: white;
+	text-align: center;
+	padding: 20px 30px;
+	text-decoration: none;
+	font-size: 25px;
+}
+li a:hover .dropdown:hover .dropbtn{
+    background-color: brown;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    color: white;
+    padding: 20px 30px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+li a:hover{
+    background-color: white;
+    color: black;
+}
+#nav{
+	width:100%;	
+}
+#a{
+	width:100%;
+	height: 10%;
+	color: white;
+	padding: 13px 0px;
+	font-family: "Comic sans MS",cursive,sans-serif;
+}
+#b{
+	
+	text-align:center;
+	color:white;
+}
+#b1{
+	float: right;
+	width:1px;
+	height:1px;
+}
+
+}
+#b2{
+	margin:0%;
+	width:1px;
+	height:1px;
+	float: right;
+	text-color: white;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 17px;
+    resize: none;
+}
+
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+}
+
+input[type=e-mail]{
+    width: 100%;
+    background-color: white;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+
+.button1:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+footer{
+	border-style: solid;
+	border-color: white;
+	height:5%;
+	padding: 20px 30px;
+	color: white; 
+}
+form{
+	margin: 0% 30%;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div id="a">
+	<i><h1 align="center" style="font-size: 55px;">Artshop</h1></i>
+</div>
+
+<div id="nav">
+<ul>
+	<li style="float:right"><a href="Feedback (2).html">Feedback</a></li>
+	<li style="float:right"><a href="signin (2).html">Sign in</a></li>
+	<li style="float:right"><a href="register.html">Registration</a></li>
+	<li style="float:left"><a href="ankita.html"><i class="fa fa-home"></i></a></li>
+	<li style="float:left" class="dropdown">
+		<a href="#" class="dropbtn">Gallery</a>
+    			<div class="dropdown-content">
+			<a href="can (2).html">Canvas</a>
+      			<a href="cer (2).html">Ceramic</a>
+      			<a href="glass (2).html">Glass</a>
+			</div>
+	</li>
+	<li style="float:left"><a href="contact.html">Contact</a></li>
+	<li style="float:left"><a href="about.html">About</a></li>
+</ul>
+</div>
+<div id="b2">
+	<h2 align="center" style="color: white; font-size: 20px;">Registration</h2>
+<form name="regform" onsubmit="validate()">
+	<h2 style="color:white">Name:<input type="text" name="fname" placeholder="name"></h2></br></br>
+	<h2 style="color:white">Email-id<input type ="text" name="emailid" placeholder="Email-id"></h2></br></br>
+	<h2 style="color:white">Gender:  Male:<input type="radio" name="gender"/>
+	                 Female:<input type="radio" name="gender"/>
+		</select>
+	</br></br>
+	<h2 style="color:white">Address:<input type="text" placeholder="Address"></h2></br></br>
+	<h2 style="color:white">Contact:<input type="text" name="cno" placeholder="Contact"></h2>
+	<h2 style="color:white">City:<input type="text" placeholder="City"></h2>
+        <h2 style="color:white">Password:<input type="password" name="passwd" placeholder="password"></h2>
+        <h2 style="color:white">Conform password:<input type="password" name="cpasswd" placeholder="conform password"></h2>
+	<h2 style="color:white">Pincode:<input type="text" placeholder="Pincode"></br></br></h2>
+	<h2 align="center"><button class="button button1"><a>Reset</a></button></h2>
+	<h2 align="center"><button class="button button1"><a>Submit</a></button></h2>
+	</h2>
+</form>
+<script>
+function validate()
+{
+            	var fname=document.regform.fname.value;
+     	if(fname=="")
+                	{
+                   		alert("Please enter your first name");
+                	}
+            	var a=/[a-zA-Z]/;
+	var b=/[0-9]/;
+            	if(!fname.match(a) || (fname.match(b)))
+                	{
+            		alert("Name should contain alphabets only");
+          	}
+	
+	var emailid=document.regform.emailid.value;
+            	if(emailid=="")
+                	{
+                   		alert("Please enter your Email-Id");
+           	}
+	var x=emailid.indexOf("@");
+            	var xa=emailid.lastIndexOf(".");
+            	if((x<1) || (xa<x+2) || (xa+2>=emailid.length))
+            	{
+                    	alert("Please enter a valid Email-Id");
+             	}
+	
+                   if((regform.gender[0].checked==false) && (regform.gender[1].checked==false))
+                   {
+                    	alert("Please select gender field");
+	}
+	var passwd=document.regform.passwd.value;
+	if(passwd=="")
+                	{
+              		alert("Please enter your password");
+                	}
+            	if(passwd.length<8 )
+                	{
+                   		alert("Password shold be more than 8 characters");
+             	}
+            	
+            	re=/[a-z]/;
+            	if(!re.test(passwd))
+                	{
+                   		alert("Password should contain atleast a lower case letter");                
+                  	}
+            	rew=/[A-Z]/;
+            	if(!rew.test(passwd))
+              	{
+                   		alert("Password should contain atlest an upper case letter");
+                   }
+          	rew=/[0-9]/
+            	if(!rew.test(passwd))
+            	{
+                		alert("Password should contain atleast one number")
+            	}
+	var cpasswd=document.regform.cpasswd.value;
+          	if(cpasswd=="")
+                	{
+              		alert("Please enter 'confirm password' field");
+                	}
+	if(passwd!=cpasswd)
+                	{
+                   		alert("Passwords don't match");
+                	}
+	var cno=document.regform.cno.value;
+            	if((cno.length<10) ||(cno.length>10))
+                	{
+                   		alert("Please enter a 10 digit number");
+	}
+}
+</script>
+</div>
+<footer>
+	<h3 align="center"> Made in A'bad <i class="fa fa-copyright"></i> 2016 Artshop</h3>
+</footer>	
+
+</body>
+</html>

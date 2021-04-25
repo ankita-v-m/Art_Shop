@@ -1,0 +1,221 @@
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+
+<style>
+.container{
+	background-image: url(back.jpg);
+	width:100%;
+	
+}
+ul{
+	
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+		
+}
+li{
+	float: left;
+}
+li a, .dropbtn{
+	display:block;
+	color: white;
+	text-align: center;
+	padding: 20px 30px;
+	text-decoration: none;
+	font-size: 20px;
+}
+li a:hover .dropdown:hover .dropbtn{
+    background-color: brown;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    color: white;
+    padding: 20px 30px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+#nav{
+	
+}
+#a{
+	width:100%;
+	height: 20%;
+}
+#b{
+	
+	text-align:center;
+	color:white;
+}
+#b1{
+	float: right;
+	width:1px;
+	height:1px;
+}
+
+}
+
+#b2{
+	margin:0%;
+	width:1px;
+	height:1px;
+	float: right;
+	text-color: white;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 16px;
+    resize: none;
+}
+
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+}
+
+input[type=e-mail]{
+    width: 100%;
+    background-color: white;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+
+.button1:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+form{
+	margin: 0% 30%;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div id="a">
+
+</div>
+
+<div id="nav">
+<ul>
+	<li style="float:right"><a href="Feedback.html">Feedback</a></li>
+	<li style="float:right"><a href="signin.html">Sign in</a></li>
+	<li style="float:right"><a href="login.html">Registration</a></li>
+	<li style="float:left"><a href="anki1.html"><i class="fa fa-home"></i></a></li>
+	<li style="float:left" class="dropdown">
+		<a href="#" class="dropbtn">Gallery</a>
+    			<div class="dropdown-content">
+      			<a href="#">Famous</a>
+			<a href="can.html">Canvas</a>
+      			<a href="cer.htmls">Ceramic</a>
+      			<a href="#">Glass</a>
+			</div>
+	</li>
+	<li style="float:left"><a>Contact</a></li>
+	<li style="float:left"><a href="about.html">About</a></li>
+</ul>
+</div>
+<div id="b2">
+	<form>
+<fieldset> "<img/></h1>
+
+	<h2 style="color:white" align="center">Name:<input type="text" name="a" placeholder="First name"/>
+	<input type="text" name="b" placeholder="Middle name"/>
+	<input type="text" name="c" placeholder="Last name"/>
+	<h2  style="color:white" align="center">DOB:<input type="date" name="c"/></h2>
+	<h2  style="color:white"align="center">Gender:</h2>
+	<h2  style="color:white" align="center">Male:<input type="radio" name="h"/></h2>
+	<h2  style="color:white" align="center">Female:<input type="radio" name="h"/></h2>
+
+	<h2  style="color:white" align="center">E-mail:<input type="e-mail" maxlenght="40"/></h2>
+	<h2  style="color:white" align="center">Contact no.<input type="text" maxlenght="10"/></h2>
+	<h2  style="color:white" align="center">Address:<textarea value="u"></textarea>
+	<h2  style="color:white"align="center">City:<select name:"city"></h2>
+	<option value="Delhi"Delhi</option>
+	<option value="Mumbai">Mumbai</option>
+	<option value="Pune">Pune</option>
+	<option value="Aurangabad">Aurangabad</option>
+	<option value="Goa">Goa</option>
+	<option value="Nagpur">Nagpur</option>
+	<option value="Chennai">Chennai</option>
+	<option value="Hydrabad">Hydrabad</option>
+	<option value="Jaipur">Jaipur</option>
+	</select>
+	<h2  style="color:white" align="center">State:<select name:"State"></h2>
+	<option value="Maharashtra"Maharashtra</option>
+	<option value="Goa">Goa</option>
+	<option value="Tamilnadu">Tamilnadu</option>
+	<option value="Aurangabad">Aurangabad</option>
+	<option value="Telangana">Telangana</option>
+	<option value="Rajastan">Rajastan</option>
+	<option value="Delhi">Delhi</option>
+	</select>
+	<h2  style="color:white" align="center">Country:<input type="value" value="India" name="India" readonly/></h2>
+	
+	<h2  style="color:white" align="center">Your registration is complete</h2>
+	<h2 align="center"><button class="button button1"><a>Reset</a></button>
+	<h2 align="center"><button class="button button1"><a>Submit</a></button>
+
+</fieldset>
+</form>
+</div>
+</div>	
+</body>
+</html>
